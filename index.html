@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mateus Almeida">
+    <meta name="description" content="Personal Website of Mateus Almeida, developper.">
+    <meta name="keywords" content="Personal Website, Curriculum, CV, Web Development, Software Development">
+
+    <title>Mateus Almeida</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-image: url("./cv/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .mt-5 {
+            margin-top: 5rem !important;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="container-fluid fixed-top mb-5 p-2 text-bg-dark justify-content-between d-flex">
+        <h1 id="title">Welcome to my Website</h1>
+        <p><a id="eng" href="?lang=eng">ENG </a>
+            <a id="jp" href="?lang=jp">JP </a>
+            <a id="pt" href="?lang=pt">PT</a></p>
+    </header>
+
+    <!-- BODY -->
+
+
+
+
+    <main class="mt-5 h-75 mb-5">
+        <section class="container-fluid text-bg-light d-flex  justify-content-around w-100 p-3 shadow-lg">
+            <img src="./cv/profilephoto.png" alt="Picture of Mateus Almeida" class="border shadow">
+            <div class="mt-5 p-3 w-50">
+                <h2 id="description"> I'm Mateus Almeida, graduate of Computer Science.<br>
+                    My aim is to improve my skills of software and web development.</h2>
+
+                <div class="d-flex justify-content-between">
+                    <details>
+                        <summary>Download my CV</summary>
+                        <div>
+                            <button id="btn-eng" class="" href="./cv/cvENG.pdf">ENG
+                                ver.</button>
+                            <button id="btn-pt" class="" href="./cv/cvPT.pdf">PT
+                                ver.</button>
+                            <button id="btn-jp" class="" href="./cv/cvJP.pdf">JP
+                                ver.</button>
+                        </div>
+                    </details>
+                    <a href="https://github.com/mbcsalmeida">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid d-flex justify-content-around text-center w-100 p-3 shadow-lg"
+            style="background-color: rgba(199, 199, 199, 0.781); height: 10%">
+        </div>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer class="footer py-3 text-bg-light mt-5">
+        <div class="container d-flex justify-content-between">
+            <span class="text-muted"> &copy; 2022</span>
+            <a href="https://www.linkedin.com/in/mateus-almeida-69a150252/"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg></a>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            let lang = new URL(window.location.href).searchParams.get("lang");
+            console.log(lang);
+            switch(lang){
+                case "jp":
+                    $("#eng").removeClass("text-muted ");
+                    $("#pt").removeClass("text-muted");
+                    $("#jp").addClass("text-muted");
+                    $("#title").text("自分の履歴書サイトへようこそ");
+                    $("#description").html("Mateus Almeidaと申します。コンピューター科学の卒業生です。<br>いつもWebプログラミングとオブジェクト指向プログラミング技能を上達することを目指しています。");
+                    $("summary").text("履歴書のダウンロード");
+                    $("#btn-eng").text("英語版");
+                    $("#btn-pt").text("ポルトガル語版");
+                    $("#btn-jp").text("日本語版");
+                    break;
+                case "pt":
+                    $("#eng").removeClass("text-muted ");
+                    $("#jp")?.removeClass("text-muted ");
+                    $("#pt").addClass("text-muted");
+                    $("#title").text("Bem-vindo ao meu site pessoal");
+                    $("#description").html("O meu nome é Mateus Almeida e sou licenciado em Ciências de Computadores.<br> O meu objetivo é melhorar as minhas competências de desenvolvimento web e de software.");
+                    $("summary").text("Download do meu Currículo");
+                    $("#btn-eng").text("Versão EN");
+                    $("#btn-pt").text("Versão PT");
+                    $("#btn-jp").text("Versão JP");
+                    break;
+                default:
+                    $("#eng").addClass("text-muted ");
+                    $("#pt")?.removeClass("text-muted ");
+                    $("#jp")?.removeClass("text-muted ");
+                    $("#title").text("Welcome to my Website");
+                    $("#description").html("I'm Mateus Almeida, graduate of Computer Science.<br> My aim is to improve my skills of software and web development.");
+                    $("summary").text();
+                    $("#btn-eng").text("ENG ver.");
+                    $("#btn-pt").text("PT ver.");
+                    $("#btn-jp").text("JP ver.");
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
