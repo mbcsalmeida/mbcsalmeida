@@ -1,242 +1,311 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mateus Almeida">
-    <meta name="description" content="Personal Website of Mateus Almeida, developper.">
-    <meta name="keywords" content="Personal Website, Curriculum, CV, Web Development, Software Development">
+    <meta name="description" content="Personal Website of Mateus Almeida, developer.">
+    <meta name="keywords"
+        content="Personal Website, Curriculum, CV, Web Development, Software Development, Portuguese Developer, Mobile Developer, Flutter, Android, Swift">
+    <title>Mateus Almeida - Portfolio</title>
 
-    <title>Mateus Almeida</title>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-    <style>
-        body,
-        html {
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            background-image: url("./cv/background.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .mt-5 {
-            margin-top: 5rem !important;
-        }
-        .display-flex{
-            display: flex;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            color: red;
-        }
-
-        .fade-in-image {
-            animation: fadeIn 2s;
-            -webkit-animation: fadeIn 2s;
-            -moz-animation: fadeIn 2s;
-            -o-animation: fadeIn 2s;
-            -ms-animation: fadeIn 2s;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @-moz-keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @-o-keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @-ms-keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            section {
-                display: grid !important;
-            }
-            #text{
-                width: 100% !important;
-            }
-            img{
-                width: 100% !important;
-            }
-        }
-
-        footer {
-            bottom: 0;
-            position: fixed;
-            height: max-content;
-            width: inherit;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <nav class="floating-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <header class="container-fluid fixed-top mb-5 p-2 bg-dark bg-gradient text-white justify-content-between d-flex">
-        <h1 id="title">Welcome to my Website</h1>
-        <p style="margin-top: 1.5vh"><a id="eng" href="?lang=eng">ENG </a>
-            <a id="jp" href="?lang=jp">JP </a>
-            <a id="pt" href="?lang=pt">PT</a>
-        </p>
-    </header>
+    <!-- PARALLAX SECTIONS -->
+    <main>
+        <section id="about" class="parallax bg1">
+            <div class="about-content content content-background slide-in left align-start">
+                <h2>Hello, I'm Mateus!</h2>
+                <p>I'm a portuguese mobile developer living in the Netherlands.</p>
+                <p>Currently working with Flutter, I also have experience with native Android, iOS and web development.
+                </p>
+            </div>
+        </section>
 
-    <!-- BODY -->
-
-
-
-
-    <main class="mt-5 h-75 mb-5">
-        <section
-            class="container-fluid display-flex bg-light bg-gradient justify-content-around w-100 p-3 shadow-2-strong fade-in-image">
-            <img src="./cv/profilephoto.jpg" alt="Picture of Mateus Almeida" class="border shadow" style="width: 35%">
-            <div id="text" class="mt-5 p-3 w-50">
-                <h2 id="description"> I'm Mateus Almeida, graduate of Computer Science.<br>
-                    My aim is to improve my skills of software and web development.</h2>
-
-
-                <details>
-                    <summary>Download my CV</summary>
-                    <div>
-                        <a
-                            href="https://github.com/mbcsalmeida/mbcsalmeida/blob/dfbaba4e1f38f64500e33bf0504fafbced6bfd90/cv/cvENG.pdf"><button
-                                id="btn-eng" class="">ENG
-                                ver.</button></a>
-                        <a
-                            href="https://github.com/mbcsalmeida/mbcsalmeida/blob/dfbaba4e1f38f64500e33bf0504fafbced6bfd90/cv/cvPT.pdf"><button
-                                id="btn-pt" class="">PT
-                                ver.</button></a>
-                        <a
-                            href="https://github.com/mbcsalmeida/mbcsalmeida/blob/dfbaba4e1f38f64500e33bf0504fafbced6bfd90/cv/cvJP.pdf"><button
-                                id="btn-jp" class="">JP
-                                ver.</button></a>
+        <section id="skills" class="parallax bg-skills">
+            <div class="skills-content content slide-in left">
+                <div class="skills-container">
+                    <h2 class="section-title">Skills</h2>
+                    <!-- Mobile -->
+                    <div class="skill-category slide-in left">
+                        <h3>Mobile</h3>
+                        <div class="icons">
+                            <img src="images/logos/kotlin.svg" alt="Kotlin">
+                            <img src="images/logos/jetpackcompose.svg" alt="Jetpack Compose">
+                            <img src="images/logos/swift.svg" alt="Swift">
+                            <img src="images/logos/reactnative.svg" alt="React Native">
+                            <img src="images/logos/flutter.svg" alt="Flutter">
+                        </div>
                     </div>
-                </details>
+
+                    <!-- Web -->
+                    <div class="skill-category slide-in right">
+                        <h3>Web</h3>
+                        <div class="icons">
+                            <img src="images/logos/react.svg" alt="React">
+                            <img src="images/logos/astro.svg" alt="Astro">
+                            <img src="images/logos/netlify.svg" alt="Netlify">
+                            <img src="images/logos/tailwind.svg" alt="Tailwind CSS">
+                        </div>
+                    </div>
+
+                    <!-- Testing -->
+                    <div class="skill-category slide-in left">
+                        <h3>Testing</h3>
+                        <div class="icons">
+                            <img src="images/logos/selenium.svg" alt="Selenium">
+                            <img src="images/logos/cucumber.svg" alt="Cucumber">
+                            <img src="images/logos/playwright.svg" alt="Playwright">
+                            <img src="images/logos/xctest.png" alt="XCTest">
+                            <img src="images/logos/junit.svg" alt="JUnit">
+                        </div>
+                    </div>
+
+                    <!-- Development -->
+                    <div class="skill-category slide-in right">
+                        <h3>Development</h3>
+                        <div class="icons">
+                            <img src="images/logos/git.svg" alt="Git">
+                            <img src="images/logos/jenkins.svg" alt="Jenkins">
+                            <img src="images/logos/jira.svg" alt="Jira">
+                            <img src="images/logos/azure.svg" alt="Azure">
+                            <img src="images/logos/bitbucket.svg" alt="BitBucket">
+                        </div>
+                    </div>
+
+                    <!-- Development -->
+                    <div class="skill-category slide-in left">
+                        <h3>Other Skills</h3>
+                        <div class="icons">
+                            <img src="images/logos/haskell.svg" alt="Haskell">
+                            <img src="images/logos/threejs.svg" alt="ThreeJS">
+                            <img src="images/logos/wordpress.svg" alt="Wordpress">
+                            <img src="images/logos/erlang.svg" alt="Erlang">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="parallax bg-projects">
+            <div class="content projects-content">
+                <div style="flex: 0.7; z-index: 100;">
+                    <button class="carousel-btn left-btn">&#10094;</button>
+                    <button class="carousel-btn right-btn">&#10095;</button>
+                </div>
+                <div style="flex: 9">
+                    <h2 class="section-title">Projects</h2>
+                    <p>Projects I've made or contributed to personally and professionally.</p>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="project-card">
+                                <h3>Personal projects</h3>
+                            </div>
+                            <!-- Project 1 -->
+                            <a class="project-card" href="https://sioneus.me">
+                                <img src="images/projects/sioneus.png" alt="Sioneus.me website">
+                                <div class="project-text">
+                                    <h3>sioneus.me</h3>
+                                    <p>Personal website to host my guides for speedrunning.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-react">React</div>
+                                    <div class="tech-badge-tailwind">Tailwind CSS</div>
+                                </div>
+                            </a>
+                            <!-- Project 2 -->
+                            <a class="project-card" href="https://megatenspeedruns.com">
+                                <img src="images/projects/megatenspeedruns.png" alt="Megaten Speedruns">
+                                <div class="project-text">
+                                    <h3>megatenspeedruns.com</h3>
+                                    <p>Official website for the Megami Tensei community.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-astro">Astro</div>
+                                </div>
+                            </a>
+                            <!-- Project 3 -->
+                            <a class="project-card" href="https://smt1-tracker.netlify.app">
+                                <img src="images/projects/tracker.png" alt="Tracker">
+                                <div class="project-text">
+                                    <h3>SMT1 Tracker</h3>
+                                    <p>Tracker for video-game Shin Megami Tensei 1</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-react">React</div>
+                                    <div class="tech-badge-tailwind">Tailwind CSS</div>
+                                </div>
+                            </a>
+                            <!-- Add more projects as needed -->
+                            <a class="project-card" href="#">
+                                <img src="images/projects/portfolio.png" alt="Portfolio">
+                                <div class="project-text">
+                                    <h3>Portfolio</h3>
+                                    <p>Portfolio website. You're on it right now!</p>
+                                </div>
+                            </a>
+                            <a class="project-card" href="https://github.com/UA-MEI-Projects/FaturasUA">
+                                <img src="images/projects/faturasua.jpeg" alt="FaturasUA">
+                                <div class="project-text">
+                                    <h3>FaturasUA</h3>
+                                    <p>Mobile app for tracking expenses by scanning receipts.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-compose">Compose</div>
+                                </div>
+                            </a>
+                            <a class="project-card" href="https://github.com/UA-MEI-Projects/nikki_app">
+                                <img src="images/projects/nikki.png" alt="Nikki">
+                                <div class="project-text">
+                                    <h3>Nikki</h3>
+                                    <p>Mobile app for journaling.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-flutter">Flutter</div>
+                                </div>
+                            </a>
+                            <a class="project-card" href="#">
+                                <span class="progress-badge">Progress</span>
+                                <img src="images/projects/preview.jpeg" alt="Qhuiz">
+                                <div class="project-text">
+                                    <h3>Qhuiz</h3>
+                                    <p>Desktop app for in-classrom quizes.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-flutter">Flutter</div>
+                                </div>
+                            </a>
+                            <div class="project-card">
+                                <h3>Work projects</h3>
+                            </div>
+                            <a class="project-card" href="#">
+                                <img src="images/projects/twig.png" alt="Twig Sales">
+                                <div class="project-text">
+                                    <h3>Twig Sales</h3>
+                                    <p>E-commerce app tailored for the client.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-android">Android</div>
+                                </div>
+                            </a>
+                            <a class="project-card" href="#">
+                                <img src="images/projects/irmaos.jpg" alt="Irmãos Peixoto">
+                                <div class="project-text">
+                                    <h3>Irmãos Peixoto</h3>
+                                    <p>E-commerce app for the Irmãos Peixoto business.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-uikit">UIKit</div>
+                                </div>
+                            </a>
+                            <a class="project-card" href="#">
+                                <img src="images/projects/zypho.jpg" alt="Zypho">
+                                <div class="project-text">
+                                    <h3>Zypho</h3>
+                                    <p>Mobile app for controlling smart showers.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-android">Android</div>
+                                </div>
+                            </a>
+                            <a class="project-card" href="#">
+                                <img src="images/projects/automaise.png" alt="Automaise">
+                                <div class="project-text">
+                                    <h3>Automaise Chatbot</h3>
+                                    <p>Chatbot for Automaise's customer service assistance.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-compose">Compose</div>
+                                </div>
+                            </a>
+                            <a class="project-card" href="#">
+                                <img src="images/projects/fundacao.png" alt="Fundação">
+                                <div class="project-text">
+                                    <h3>Fundação Champalinaud</h3>
+                                    <p>Mobile app for managing systems and patients in hospitals.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-swiftui">SwiftUI</div>
+                                </div>
+                            </a>
+                            <a class="project-card" href="#">
+                                <span class="progress-badge">Progress</span>
+                                <img src="images/projects/inexcloud.png" alt="INEX Cloud">
+                                <div class="project-text">
+                                    <h3>INEX Cloud App</h3>
+                                    <p>Mobile app for interacting with the INEX Cloud alarm system.</p>
+                                </div>
+                                <div class="badge-container">
+                                    <div class="tech-badge-flutter">Flutter</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
 
 
             </div>
         </section>
 
-        <div class="container-fluid d-flex justify-content-around text-center w-100 p-3 bg-secondary bg-gradient fade-in-image"
-            style=" height: 10%">
-        </div>
+
     </main>
 
-    <!-- FOOTER  -->
-    <footer class="footer py-3 bg-dark bg-gradient mt-5">
-        <div class="container d-flex justify-content-between">
-            <span id="trademark" class="text-muted"> &copy; 2022</span>
-            <div id="footer-icons" class="d-flex justify-content-between">
-                <a href="https://www.linkedin.com/in/mateus-almeida-69a150252/"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg></a> &nbsp;&nbsp;&nbsp;
-                <a href="https://github.com/mbcsalmeida">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                    </svg>
-                </a>
-            </div>
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <p>&copy; 2025</p>
+        <div>
+            <a href="https://www.linkedin.com/in/mateus-almeida-69a150252/">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                    style="fill:#FFFFFF;">
+                    <path
+                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://github.com/mbcsalmeida">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+                    style="fill:#FFFFFF;">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <g transform="scale(5.12,5.12)">
+                            <path
+                                d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </a>
         </div>
+        <details>
+            <summary>Download my CV</summary>
+            <div>
+                <a href="cv/cvENG.pdf"><button>ENG ver.</button></a>
+                <a href="cv/cvPT.pdf"><button>PT ver.</button></a>
+                <a href="cv/cvJP.pdf"><button>JP ver.</button></a>
+            </div>
+        </details>
     </footer>
 
-    <script>
-        $(document).ready(function () {
-            let lang = new URL(window.location.href).searchParams.get("lang");
-            console.log(lang);
-            switch (lang) {
-                case "jp":
-                    $("#eng").removeClass("text-muted ");
-                    $("#pt").removeClass("text-muted");
-                    $("#jp").addClass("text-muted");
-                    $("#title").text("自分の履歴書サイトへようこそ");
-                    $("#description").html("Mateus Almeidaと申します。コンピューター科学の卒業生です。<br>いつもWebプログラミングとオブジェクト指向プログラミング技能を上達することを目指しています。");
-                    $("summary").text("履歴書のダウンロード");
-                    $("#btn-eng").text("英語版");
-                    $("#btn-pt").text("ポルトガル語版");
-                    $("#btn-jp").text("日本語版");
-                    break;
-                case "pt":
-                    $("#eng").removeClass("text-muted ");
-                    $("#jp")?.removeClass("text-muted ");
-                    $("#pt").addClass("text-muted");
-                    $("#title").text("Bem-vindo ao meu site pessoal");
-                    $("#description").html("O meu nome é Mateus Almeida e sou licenciado em Ciências de Computadores.<br> O meu objetivo é melhorar as minhas competências de desenvolvimento web e de software.");
-                    $("summary").text("Download do meu Currículo");
-                    $("#btn-eng").text("Versão EN");
-                    $("#btn-pt").text("Versão PT");
-                    $("#btn-jp").text("Versão JP");
-                    break;
-                case "eng":
-                default:
-                    $("#eng").addClass("text-muted ");
-                    $("#pt")?.removeClass("text-muted ");
-                    $("#jp")?.removeClass("text-muted ");
-                    $("#title").text("Welcome to my Website");
-                    $("#description").html("I'm Mateus Almeida, graduate of Computer Science.<br> My aim is to improve my skills of software and web development.");
-                    $("summary").text();
-                    $("#btn-eng").text("ENG ver.");
-                    $("#btn-pt").text("PT ver.");
-                    $("#btn-jp").text("JP ver.");
-            }
-        });
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

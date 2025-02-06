@@ -1,0 +1,426 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: rgba(62, 60, 60, 0.5);
+    padding: 9px;
+}
+
+.align-start {
+    text-align: start !important;
+}
+
+.parallax {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1 {
+    background-image: url('./images/background/background1.jpg');
+}
+
+.bg-projects {
+    background-image: url('./images/background/background3.jpg');
+}
+
+.content {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-content{
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content-background {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Skills Section */
+.bg-skills {
+    background-image: url('./images/background/background2.jpg');
+}
+
+.skills-content{
+    flex-basis: 100% !important;
+}
+
+/* Skills Section: Make sure it doesn’t overflow */
+#skills {
+    min-height: 140vh; /* Ensure full viewport height */
+    display: flex;
+    align-items: center; /* Center content */
+    justify-content: center;
+    padding: 5vh 0;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between categories */
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 0;
+    backdrop-filter: blur(3px);
+}
+
+/* Skill Category */
+.skill-category {
+    background: rgba(255, 255, 255, 0.7); /* Dark transparent background */
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 650px; /* Keeps it contained */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    min-height: auto; /* Ensures height adjusts dynamically */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.skill-category:hover {
+    transform: scale(1.05);
+}
+
+/* Skill Titles */
+.skill-category h3 {
+    color:black;
+    margin-bottom: 20px;
+}
+
+/* Icons: Bigger & More Spaced Out */
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Less spacing to fit better */
+}
+
+/* Individual Icons */
+.icons img {
+    width: 65px; /* Reduced size */
+    height: 65px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Slide-in effect (default hidden) */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Slide in from the left */
+.slide-in.left {
+    transform: translateX(-50px);
+}
+
+/* Slide in from the right */
+.slide-in.right {
+    transform: translateX(50px);
+}
+
+/* When element is visible */
+.slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Floating Navigation */
+.floating-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.floating-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.floating-nav li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.floating-nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 50%;
+}
+
+.floating-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Projects Section */
+#projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0;
+}
+
+/* Carousel Container */
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Carousel (Holds Project Cards) */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px; /* Adds small space between cards */
+    padding: 0 5vw;
+}
+
+.projects-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
+
+/* Project Cards */
+.project-card {
+    flex: 0 0 300px; /* Fixed width */
+    background: rgba(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    border-radius:0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+
+.project-card:hover{
+    transform: translate(0, -5px);
+}
+
+.project-text{
+    padding: 15px;
+    flex: 2;
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card p {
+    margin-top: 10px;
+    color: #000000;
+}
+
+.project-card h3{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    left: 50;
+    background: #ffffff;
+    color: black;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background: rgba(215, 214, 214, 0.8);
+}
+
+.left-btn {
+    top: 43%;
+}
+
+.right-btn {
+    top: 55%;
+}
+
+/* Progress Badge */
+.progress-badge {
+    position: absolute;
+    background: rgba(249, 114, 114, 0.5); /* Semi-transparent background */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid rgb(254, 129, 129);; /* Solid border */
+    border-radius: 10px; /* Rounded corners */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px 0 0 5px;
+}
+
+.badge-container{
+    display: flex;
+    padding: 5px;
+    gap: 2px;
+}
+
+.tech-badge-flutter {
+    background: rgb(52, 186, 239); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-badge-react {
+    background: rgb(124, 211, 245); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-badge-compose {
+    background: rgb(6, 127, 34); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-badge-astro {
+    background: rgb(11, 6, 47); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-badge-tailwind {
+    background: rgb(38, 116, 122); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-badge-android {
+    background: rgb(61, 175, 128); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-badge-uikit {
+    background: rgb(3, 67, 110);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tech-badge-swiftui {
+    background: rgb(3, 67, 110); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.tech-badge-wordpress {
+    background: rgb(153, 100, 144); 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
